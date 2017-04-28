@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ReactViewController.h"
 #import "ConnectUtils.h"
 @interface ViewController : UIViewController <ConnectUtilsDelegate,MBProgressHUDDelegate>
 {

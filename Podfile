@@ -19,4 +19,5 @@ target 'LoveForMusic' do
 	  'RCTWebSocket',
 	  'RCTLinkingIOS',
 	]
+	pod "Yoga", :path => "./React/node_modules/react-native/ReactCommon/yoga"
 end

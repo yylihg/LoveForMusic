@@ -10,4 +10,5 @@
 
 @interface ReactViewController : UIViewController
 
+@property(nonatomic,retain) NSString *component;//react native 组件
 @end

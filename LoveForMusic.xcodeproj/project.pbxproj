@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D197D0F1EA2115300AFBBF1 /* icon_mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D197D0D1EA2115300AFBBF1 /* icon_mobile.png */; };
+		4D197D101EA2115300AFBBF1 /* icon_vertify.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D197D0E1EA2115300AFBBF1 /* icon_vertify.png */; };
+		4D3812291E93B10A0029E6B5 /* MainMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3812281E93B10A0029E6B5 /* MainMenuModel.m */; };
 		4D6491691E9133B5009860E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D64915E1E9133B5009860E3 /* MBProgressHUD.m */; };
 		4D64916A1E9133B5009860E3 /* sdRefeshView_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D64915F1E9133B5009860E3 /* sdRefeshView_arrow@2x.png */; };
 		4D64916B1E9133B5009860E3 /* SDRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491621E9133B5009860E3 /* SDRefreshFooterView.m */; };
@@ -27,6 +30,9 @@
 		4D6491991E914A55009860E3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6491981E914A55009860E3 /* libsqlite3.tbd */; };
 		4D64919B1E914A64009860E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D64919A1E914A64009860E3 /* UIKit.framework */; };
 		4D64919D1E914A6B009860E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D64919C1E914A6B009860E3 /* Foundation.framework */; };
+		4D6491A61E923F30009860E3 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491A51E923F30009860E3 /* RegistViewController.m */; };
+		4D6491A91E92406D009860E3 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491A81E92406D009860E3 /* ResetPasswordViewController.m */; };
+		4D6491AC1E927D16009860E3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491AB1E927D16009860E3 /* BaseViewController.m */; };
 		4DA4A9A41E9100560073D246 /* bg_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A95F1E9100560073D246 /* bg_login.jpg */; };
 		4DA4A9A51E9100560073D246 /* btn_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9601E9100560073D246 /* btn_login.png */; };
 		4DA4A9A61E9100560073D246 /* btn_set_confirm.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */; };
@@ -104,10 +110,15 @@
 		4DCBD9441E7580E90039282D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBD9421E7580E90039282D /* LaunchScreen.storyboard */; };
 		4DCBD9721E75A0C10039282D /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBD96F1E75A0C10039282D /* CalendarManager.m */; };
 		4DCBD9731E75A0C10039282D /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBD9711E75A0C10039282D /* ReactViewController.m */; };
+		4DF4B40A1E92A4270021A381 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4B4091E92A4270021A381 /* MainViewController.m */; };
 		9B1D6C76DE2F23267167D60D /* libPods-LoveForMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9DC4D966A92F23A032C7B0 /* libPods-LoveForMusic.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D197D0D1EA2115300AFBBF1 /* icon_mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_mobile.png; sourceTree = "<group>"; };
+		4D197D0E1EA2115300AFBBF1 /* icon_vertify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_vertify.png; sourceTree = "<group>"; };
+		4D3812271E93B10A0029E6B5 /* MainMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuModel.h; sourceTree = "<group>"; };
+		4D3812281E93B10A0029E6B5 /* MainMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuModel.m; sourceTree = "<group>"; };
 		4D64915D1E9133B5009860E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4D64915E1E9133B5009860E3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4D64915F1E9133B5009860E3 /* sdRefeshView_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdRefeshView_arrow@2x.png"; sourceTree = "<group>"; };
@@ -147,6 +158,12 @@
 		4D64919A1E914A64009860E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4D64919C1E914A6B009860E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D64919E1E91DB0D009860E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4D6491A41E923F30009860E3 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		4D6491A51E923F30009860E3 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		4D6491A71E92406D009860E3 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
+		4D6491A81E92406D009860E3 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
+		4D6491AA1E927D16009860E3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4D6491AB1E927D16009860E3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		4DA4A95F1E9100560073D246 /* bg_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_login.jpg; sourceTree = "<group>"; };
 		4DA4A9601E9100560073D246 /* btn_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_login.png; sourceTree = "<group>"; };
 		4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_set_confirm.9.png; sourceTree = "<group>"; };
@@ -230,6 +247,8 @@
 		4DCBD96F1E75A0C10039282D /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		4DCBD9701E75A0C10039282D /* ReactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
 		4DCBD9711E75A0C10039282D /* ReactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
+		4DF4B4081E92A4270021A381 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4DF4B4091E92A4270021A381 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		508DD7405ED05AD0AA65B07C /* Pods-LoveForMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveForMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveForMusic/Pods-LoveForMusic.release.xcconfig"; sourceTree = "<group>"; };
 		97153D7C998AB4BA8F249893 /* Pods-LoveForMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveForMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveForMusic/Pods-LoveForMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		DD9DC4D966A92F23A032C7B0 /* libPods-LoveForMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveForMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,13 +335,32 @@
 			children = (
 				4D6491951E91492A009860E3 /* UserModel.h */,
 				4D6491961E91492A009860E3 /* UserModel.m */,
+				4D3812271E93B10A0029E6B5 /* MainMenuModel.h */,
+				4D3812281E93B10A0029E6B5 /* MainMenuModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4D6491A31E923F10009860E3 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				4D6491A41E923F30009860E3 /* RegistViewController.h */,
+				4D6491A51E923F30009860E3 /* RegistViewController.m */,
+				4D6491A71E92406D009860E3 /* ResetPasswordViewController.h */,
+				4D6491A81E92406D009860E3 /* ResetPasswordViewController.m */,
+				4D6491AA1E927D16009860E3 /* BaseViewController.h */,
+				4D6491AB1E927D16009860E3 /* BaseViewController.m */,
+				4DF4B4081E92A4270021A381 /* MainViewController.h */,
+				4DF4B4091E92A4270021A381 /* MainViewController.m */,
+			);
+			path = project;
 			sourceTree = "<group>";
 		};
 		4DA4A95E1E9100560073D246 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				4D197D0D1EA2115300AFBBF1 /* icon_mobile.png */,
+				4D197D0E1EA2115300AFBBF1 /* icon_vertify.png */,
 				4DA4A95F1E9100560073D246 /* bg_login.jpg */,
 				4DA4A9601E9100560073D246 /* btn_login.png */,
 				4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */,
@@ -417,6 +455,7 @@
 		4DCBD9331E7580E90039282D /* LoveForMusic */ = {
 			isa = PBXGroup;
 			children = (
+				4D6491A31E923F10009860E3 /* project */,
 				4D6491941E914906009860E3 /* Model */,
 				4D64918A1E91348B009860E3 /* Utils */,
 				4D6491761E91347F009860E3 /* JSON */,
@@ -544,6 +583,7 @@
 				4DA4A9AF1E9100560073D246 /* icon_app.png in Resources */,
 				4DA4A9E51E9100560073D246 /* icon_wifi.png in Resources */,
 				4DA4A9A91E9100560073D246 /* btn_style_five_pressed.9.png in Resources */,
+				4D197D0F1EA2115300AFBBF1 /* icon_mobile.png in Resources */,
 				4DA4A9D31E9100560073D246 /* icon_main_realtime@2x.png in Resources */,
 				4DA4A9C21E9100560073D246 /* icon_main_datacurve@3x.png in Resources */,
 				4DA4A9AD1E9100560073D246 /* ico_back_down.png in Resources */,
@@ -559,6 +599,7 @@
 				4DCBD9441E7580E90039282D /* LaunchScreen.storyboard in Resources */,
 				4DA4A9C61E9100560073D246 /* icon_main_device.png in Resources */,
 				4DA4A9A81E9100560073D246 /* btn_style_five_normal.9.png in Resources */,
+				4D197D101EA2115300AFBBF1 /* icon_vertify.png in Resources */,
 				4DA4A9BD1E9100560073D246 /* icon_login_unrem.png in Resources */,
 				4DA4A9A51E9100560073D246 /* btn_login.png in Resources */,
 				4DA4A9D61E9100560073D246 /* icon_main_realtime_select@2x.png in Resources */,
@@ -670,11 +711,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCBD93C1E7580E90039282D /* ViewController.m in Sources */,
+				4D6491AC1E927D16009860E3 /* BaseViewController.m in Sources */,
 				4D6491871E91347F009860E3 /* SBJsonBase.m in Sources */,
+				4DF4B40A1E92A4270021A381 /* MainViewController.m in Sources */,
 				4D6491971E91492A009860E3 /* UserModel.m in Sources */,
+				4D3812291E93B10A0029E6B5 /* MainMenuModel.m in Sources */,
 				4D6491691E9133B5009860E3 /* MBProgressHUD.m in Sources */,
 				4D64916C1E9133B5009860E3 /* SDRefreshHeaderView.m in Sources */,
+				4D6491A91E92406D009860E3 /* ResetPasswordViewController.m in Sources */,
 				4D64916E1E9133B5009860E3 /* UIView+SDExtension.m in Sources */,
+				4D6491A61E923F30009860E3 /* RegistViewController.m in Sources */,
 				4D6491741E913477009860E3 /* DbMamager.m in Sources */,
 				4D6491921E91348B009860E3 /* Utils.m in Sources */,
 				4DCBD9731E75A0C10039282D /* ReactViewController.m in Sources */,

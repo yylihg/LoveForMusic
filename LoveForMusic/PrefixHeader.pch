@@ -18,4 +18,6 @@
     #import <Foundation/Foundation.h>
     #import "MBProgressHUD.h"
     #import "AppDelegate.h"
+    #import "ConnectUtils.h"
+    #import "BaseViewController.h"
 #endif

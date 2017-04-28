@@ -14,15 +14,16 @@
 @end
 
 @implementation ReactViewController
-
+@synthesize component;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     NSString * strUrl = @"http://192.168.1.8:8081/index.ios.bundle?platform=ios&dev=true";
+//     NSString * strUrl = @"http://192.168.43.119:8081/index.ios.bundle?platform=ios&dev=true";
     NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
     
     RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                         moduleName:@"ReactIosProject"
+                                                         moduleName: component
                                                   initialProperties:nil
                                                       launchOptions:nil];
     self.view = rootView;

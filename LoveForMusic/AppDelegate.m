@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height//获取屏幕高度，兼容性测试
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width//获取屏幕宽度，兼容性测试
 @interface AppDelegate ()
@@ -55,7 +56,7 @@ CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
         myDelegate.autoSizeScaleX = 1.0;
         myDelegate.autoSizeScaleY = 1.0;
     }
-    
+
     return YES;
 }
 
