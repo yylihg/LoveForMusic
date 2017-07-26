@@ -33,7 +33,7 @@
 		4D6491A61E923F30009860E3 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491A51E923F30009860E3 /* RegistViewController.m */; };
 		4D6491A91E92406D009860E3 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491A81E92406D009860E3 /* ResetPasswordViewController.m */; };
 		4D6491AC1E927D16009860E3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6491AB1E927D16009860E3 /* BaseViewController.m */; };
-		4DA4A9A41E9100560073D246 /* bg_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A95F1E9100560073D246 /* bg_login.jpg */; };
+		4D8424321EB7724B00724706 /* ReactModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8424311EB7724B00724706 /* ReactModule.m */; };
 		4DA4A9A51E9100560073D246 /* btn_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9601E9100560073D246 /* btn_login.png */; };
 		4DA4A9A61E9100560073D246 /* btn_set_confirm.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */; };
 		4DA4A9A71E9100560073D246 /* btn_style_five_focused.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9621E9100560073D246 /* btn_style_five_focused.9.png */; };
@@ -60,7 +60,6 @@
 		4DA4A9BC1E9100560073D246 /* icon_login_server.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9771E9100560073D246 /* icon_login_server.png */; };
 		4DA4A9BD1E9100560073D246 /* icon_login_unrem.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9781E9100560073D246 /* icon_login_unrem.png */; };
 		4DA4A9BE1E9100560073D246 /* icon_login_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A9791E9100560073D246 /* icon_login_user.png */; };
-		4DA4A9BF1E9100560073D246 /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A97A1E9100560073D246 /* icon_logo.png */; };
 		4DA4A9C01E9100560073D246 /* icon_main_datacurve.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A97B1E9100560073D246 /* icon_main_datacurve.png */; };
 		4DA4A9C11E9100560073D246 /* icon_main_datacurve@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A97C1E9100560073D246 /* icon_main_datacurve@2x.png */; };
 		4DA4A9C21E9100560073D246 /* icon_main_datacurve@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4A97D1E9100560073D246 /* icon_main_datacurve@3x.png */; };
@@ -110,6 +109,8 @@
 		4DCBD9441E7580E90039282D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBD9421E7580E90039282D /* LaunchScreen.storyboard */; };
 		4DCBD9721E75A0C10039282D /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBD96F1E75A0C10039282D /* CalendarManager.m */; };
 		4DCBD9731E75A0C10039282D /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBD9711E75A0C10039282D /* ReactViewController.m */; };
+		4DDDDA7C1F2798F500A023E3 /* bg_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDDA7B1F2798F500A023E3 /* bg_login.png */; };
+		4DDDDA801F279C4200A023E3 /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDDA7F1F279C4200A023E3 /* icon_logo.png */; };
 		4DF4B40A1E92A4270021A381 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4B4091E92A4270021A381 /* MainViewController.m */; };
 		9B1D6C76DE2F23267167D60D /* libPods-LoveForMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9DC4D966A92F23A032C7B0 /* libPods-LoveForMusic.a */; };
 /* End PBXBuildFile section */
@@ -164,7 +165,8 @@
 		4D6491A81E92406D009860E3 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
 		4D6491AA1E927D16009860E3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		4D6491AB1E927D16009860E3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		4DA4A95F1E9100560073D246 /* bg_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_login.jpg; sourceTree = "<group>"; };
+		4D8424301EB7724B00724706 /* ReactModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactModule.h; sourceTree = "<group>"; };
+		4D8424311EB7724B00724706 /* ReactModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactModule.m; sourceTree = "<group>"; };
 		4DA4A9601E9100560073D246 /* btn_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_login.png; sourceTree = "<group>"; };
 		4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_set_confirm.9.png; sourceTree = "<group>"; };
 		4DA4A9621E9100560073D246 /* btn_style_five_focused.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_style_five_focused.9.png; sourceTree = "<group>"; };
@@ -191,7 +193,6 @@
 		4DA4A9771E9100560073D246 /* icon_login_server.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_login_server.png; sourceTree = "<group>"; };
 		4DA4A9781E9100560073D246 /* icon_login_unrem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_login_unrem.png; sourceTree = "<group>"; };
 		4DA4A9791E9100560073D246 /* icon_login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_login_user.png; sourceTree = "<group>"; };
-		4DA4A97A1E9100560073D246 /* icon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logo.png; sourceTree = "<group>"; };
 		4DA4A97B1E9100560073D246 /* icon_main_datacurve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_main_datacurve.png; sourceTree = "<group>"; };
 		4DA4A97C1E9100560073D246 /* icon_main_datacurve@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_main_datacurve@2x.png"; sourceTree = "<group>"; };
 		4DA4A97D1E9100560073D246 /* icon_main_datacurve@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_main_datacurve@3x.png"; sourceTree = "<group>"; };
@@ -247,6 +248,8 @@
 		4DCBD96F1E75A0C10039282D /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		4DCBD9701E75A0C10039282D /* ReactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
 		4DCBD9711E75A0C10039282D /* ReactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
+		4DDDDA7B1F2798F500A023E3 /* bg_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_login.png; sourceTree = "<group>"; };
+		4DDDDA7F1F279C4200A023E3 /* icon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logo.png; sourceTree = "<group>"; };
 		4DF4B4081E92A4270021A381 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4DF4B4091E92A4270021A381 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		508DD7405ED05AD0AA65B07C /* Pods-LoveForMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveForMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveForMusic/Pods-LoveForMusic.release.xcconfig"; sourceTree = "<group>"; };
@@ -359,9 +362,10 @@
 		4DA4A95E1E9100560073D246 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				4DDDDA7F1F279C4200A023E3 /* icon_logo.png */,
+				4DDDDA7B1F2798F500A023E3 /* bg_login.png */,
 				4D197D0D1EA2115300AFBBF1 /* icon_mobile.png */,
 				4D197D0E1EA2115300AFBBF1 /* icon_vertify.png */,
-				4DA4A95F1E9100560073D246 /* bg_login.jpg */,
 				4DA4A9601E9100560073D246 /* btn_login.png */,
 				4DA4A9611E9100560073D246 /* btn_set_confirm.9.png */,
 				4DA4A9621E9100560073D246 /* btn_style_five_focused.9.png */,
@@ -388,7 +392,6 @@
 				4DA4A9771E9100560073D246 /* icon_login_server.png */,
 				4DA4A9781E9100560073D246 /* icon_login_unrem.png */,
 				4DA4A9791E9100560073D246 /* icon_login_user.png */,
-				4DA4A97A1E9100560073D246 /* icon_logo.png */,
 				4DA4A97B1E9100560073D246 /* icon_main_datacurve.png */,
 				4DA4A97C1E9100560073D246 /* icon_main_datacurve@2x.png */,
 				4DA4A97D1E9100560073D246 /* icon_main_datacurve@3x.png */,
@@ -492,6 +495,8 @@
 				4DCBD96F1E75A0C10039282D /* CalendarManager.m */,
 				4DCBD9701E75A0C10039282D /* ReactViewController.h */,
 				4DCBD9711E75A0C10039282D /* ReactViewController.m */,
+				4D8424301EB7724B00724706 /* ReactModule.h */,
+				4D8424311EB7724B00724706 /* ReactModule.m */,
 			);
 			path = ReactNative;
 			sourceTree = "<group>";
@@ -578,7 +583,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA4A9B21E9100560073D246 /* icon_app180@3x.png in Resources */,
-				4DA4A9A41E9100560073D246 /* bg_login.jpg in Resources */,
 				4DA4A9B71E9100560073D246 /* icon_app87@3x.png in Resources */,
 				4DA4A9AF1E9100560073D246 /* icon_app.png in Resources */,
 				4DA4A9E51E9100560073D246 /* icon_wifi.png in Resources */,
@@ -615,7 +619,6 @@
 				4DA4A9D51E9100560073D246 /* icon_main_realtime_select.png in Resources */,
 				4DA4A9AB1E9100560073D246 /* ic_launcher.png in Resources */,
 				4DA4A9B01E9100560073D246 /* icon_app120@2x.png in Resources */,
-				4DA4A9BF1E9100560073D246 /* icon_logo.png in Resources */,
 				4DA4A9CE1E9100560073D246 /* icon_main_forewarn@3x.png in Resources */,
 				4DA4A9DD1E9100560073D246 /* icon_start_HD4.7@3x.png in Resources */,
 				4DA4A9E01E9100560073D246 /* icon_start_ipad1x.png in Resources */,
@@ -624,6 +627,7 @@
 				4DA4A9E61E9100560073D246 /* marker.png in Resources */,
 				4DA4A9DB1E9100560073D246 /* icon_start.png in Resources */,
 				4DA4A9C01E9100560073D246 /* icon_main_datacurve.png in Resources */,
+				4DDDDA7C1F2798F500A023E3 /* bg_login.png in Resources */,
 				4DA4A9E21E9100560073D246 /* icon_start_Retina4@2x.png in Resources */,
 				4DA4A9C51E9100560073D246 /* icon_main_datacurve_select@3x.png in Resources */,
 				4DA4A9E41E9100560073D246 /* icon_warn.png in Resources */,
@@ -633,6 +637,7 @@
 				4DCBD9411E7580E90039282D /* Assets.xcassets in Resources */,
 				4DA4A9E31E9100560073D246 /* icon_top_tab.png in Resources */,
 				4DA4A9BE1E9100560073D246 /* icon_login_user.png in Resources */,
+				4DDDDA801F279C4200A023E3 /* icon_logo.png in Resources */,
 				4DA4A9C41E9100560073D246 /* icon_main_datacurve_select@2x.png in Resources */,
 				4DA4A9D11E9100560073D246 /* icon_main_forewarn_select@3x.png in Resources */,
 				4DA4A9D41E9100560073D246 /* icon_main_realtime@3x.png in Resources */,
@@ -728,6 +733,7 @@
 				4DCBD9391E7580E90039282D /* AppDelegate.m in Sources */,
 				4D6491911E91348B009860E3 /* ConnectUtils.m in Sources */,
 				4D6491881E91347F009860E3 /* SBJsonParser.m in Sources */,
+				4D8424321EB7724B00724706 /* ReactModule.m in Sources */,
 				4D6491861E91347F009860E3 /* SBJSON.m in Sources */,
 				4D64916B1E9133B5009860E3 /* SDRefreshFooterView.m in Sources */,
 				4D6491891E91347F009860E3 /* SBJsonWriter.m in Sources */,

@@ -11,6 +11,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+// 创建一个原生的导航条
+//@property (nonatomic, strong) UINavigationController *nav;
 @property float autoSizeScaleX;
 @property float autoSizeScaleY;
 //storyBoard view自动适配

@@ -8,5 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UITabBarController
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+
+@interface MainViewController : UITabBarController<AMapLocationManagerDelegate>
+
+@property (nonatomic, strong) AMapLocationManager *locationManager;
+@property (nonatomic, strong) UISegmentedControl *showSegment;
+
 @end

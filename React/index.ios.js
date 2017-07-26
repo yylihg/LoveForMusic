@@ -10,3 +10,6 @@ AppRegistry.registerComponent('IndividualView', () => IndividualView);
 
 import HomeView from "./views/home/HomeView"
 AppRegistry.registerComponent('HomeView', () => HomeView);
+
+import SeeView from "./views/see/SeeView"
+AppRegistry.registerComponent('SeeView', () => SeeView);

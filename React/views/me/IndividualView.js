@@ -19,34 +19,34 @@ export default class IndividualView extends Component {
         return (
             <ScrollView contentContainerStyle={styles.container}>
                 <View style={styles.headContainer}>
-                    <Image style={styles.iconImg} source={require('../../res/icon_app.png')} />
+                    <Image style={styles.iconImg} source={require('../../img/icon_app.png')} />
                     <Text>音为爱</Text>
                 </View>
                 <View style={styles.btnLine}></View>
                 <TouchableHighlight underlayColor = '#eee' onPress={()=>this._onPressButton(1)}>
                     <View style={styles.btnStyle}>
-                        <Image style={styles.btnImg} source={require('../../res/icon_app.png')} />
+                        <Image style={styles.btnImg} source={require('../../img/icon_app.png')} />
                         <Text style={styles.btnText}>收藏</Text>
                     </View>
                 </TouchableHighlight>
                 <View style={styles.btnLine}></View>
                 <TouchableHighlight underlayColor = '#eee' onPress={()=>this._onPressButton(2)}>
                     <View style={styles.btnStyle}>
-                        <Image style={styles.btnImg} source={require('../../res/icon_app.png')} />
+                        <Image style={styles.btnImg} source={require('../../img/icon_app.png')} />
                         <Text style={styles.btnText}>视频</Text>
                     </View>
                 </TouchableHighlight>
                 <View style={styles.btnLine}></View>
                 <TouchableHighlight underlayColor = '#eee' onPress={()=>this._onPressButton(3)}>
                     <View style={styles.btnStyle}>
-                        <Image style={styles.btnImg} source={require('../../res/icon_app.png')} />
+                        <Image style={styles.btnImg} source={require('../../img/icon_app.png')} />
                         <Text style={styles.btnText}>课程</Text>
                     </View>
                 </TouchableHighlight>
                 <View style={styles.btnLine}></View>
                 <TouchableHighlight underlayColor = '#eee' onPress={()=>this._onPressButton(4)}>
                     <View style={styles.btnStyle}>
-                        <Image style={styles.btnImg} source={require('../../res/icon_app.png')} />
+                        <Image style={styles.btnImg} source={require('../../img/icon_app.png')} />
                         <Text style={styles.btnText}>个人信息设置</Text>
                     </View>
                 </TouchableHighlight>

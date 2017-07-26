@@ -20,4 +20,6 @@ target 'LoveForMusic' do
 	  'RCTLinkingIOS',
 	]
 	pod "Yoga", :path => "./React/node_modules/react-native/ReactCommon/yoga"
+    
+    pod 'AMapLocation'
 end

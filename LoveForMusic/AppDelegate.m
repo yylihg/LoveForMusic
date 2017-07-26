@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height//获取屏幕高度，兼容性测试
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width//获取屏幕宽度，兼容性测试
 @interface AppDelegate ()
@@ -15,6 +16,12 @@
 @end
 
 @implementation AppDelegate
+
+
+- (void)configureMapAPIKey
+{
+    [AMapServices sharedServices].apiKey =@"7221cde41db5cf0ab495d6c31e37b18f";
+}
 
 
 //storyBoard view自动适配
@@ -48,6 +55,8 @@ CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    
+    [self configureMapAPIKey];
     NSLog(@"ScreenHeight :%f",ScreenHeight);
     if(ScreenHeight >= 480){
         myDelegate.autoSizeScaleX = ScreenWidth/320;
@@ -57,6 +66,10 @@ CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
         myDelegate.autoSizeScaleY = 1.0;
     }
 
+    // 初始化Nav
+//    _nav = [[UINavigationController alloc]initWithRootViewController:application.delegate.window.rootViewController];
+    
+//   application.delegate.window.rootViewController = _nav;
     return YES;
 }
 
