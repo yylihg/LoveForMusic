@@ -15,20 +15,24 @@ class HeadView extends Component {
 
     render() {
         return (
-            <View style={styles.headViewContainer}>
-                <Text>{this.props.title}</Text>
+            <View style={styles.headerView}>
+                <Text style={styles.headerViewTitle}>{this.props.title}</Text>
             </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    headViewContainer: {
-        marginTop: 20,
-        height: 40,
-        backgroundColor: '#098',
+    headerView:{
+        backgroundColor : '#0168ae',
+        height: 60,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    headerViewTitle:{
+        marginTop:10,
+        fontSize: 18,
+        color: "#fff"
     }
 });
 

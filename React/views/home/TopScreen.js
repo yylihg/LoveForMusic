@@ -8,6 +8,7 @@ import {
   View,
   Dimensions,
   Image,
+  TouchableOpacity
 } from 'react-native';
 
 import ViewPager from 'react-native-viewpager';
@@ -27,6 +28,7 @@ var IMGS = [
 //noinspection JSAnnotator
 var TopScreen = React.createClass({
   getInitialState: function() {
+      // this._renderPage = this._renderPage.bind(this);
     var dataSource = new ViewPager.DataSource({
       pageHasChanged: (p1, p2) => p1 !== p2,
     });
@@ -47,13 +49,19 @@ var TopScreen = React.createClass({
     );
   },
 
+  _viewPageItemClick: function (pageID) {
+      alert('click:' + pageID)
+  },
+    
   _renderPage: function(
     data: Object,
     pageID: number | string,) {
     return (
-      <Image
-        source={{uri: data}}
-        style={styles.page} />
+        //<TouchableHighlight  onPress={() => this._viewPageItemClick(pageID)}>
+          <Image
+            source={{uri: data}}
+            style={styles.page} />
+        //</TouchableHighlight>
     );
   },
 });

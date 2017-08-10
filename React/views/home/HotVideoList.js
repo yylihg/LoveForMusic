@@ -26,8 +26,8 @@ class HotVideoList extends Component {
         let items = datas.map(
             (info, i) => (
                 <HotVideoCell
-                    title={datas[i].title}
-                    imageUrl ={datas[i].image}
+                    title={datas[i].VIDEO_NAME}
+                    imageUrl ={{uri: datas[i].PRIVIEW_IMG_URL}}
                     key={i}
                     onPress={() => this.props.onItemSelected(i)} />
             )

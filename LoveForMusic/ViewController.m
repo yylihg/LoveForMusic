@@ -11,6 +11,7 @@
 #import "ResetPasswordViewController.h"
 #import "MainViewController.h"
 
+
 @interface ViewController ()
 //- (IBAction)goRN:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *usernameET;
@@ -28,7 +29,7 @@
 @implementation ViewController
 @synthesize ToastView;
 @synthesize mConnector;
-
+@synthesize userInfo = _userInfo;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -80,11 +81,11 @@
 }
 
 - (IBAction)LoginBtn:(id)sender {
-//    //判断是否正在登陆，是的话不做响应
-//    if (isLogining) {
-//        [self showDialog:@"正在登陆"];
-//        return;
-//    }
+    //判断是否正在登陆，是的话不做响应
+    if (isLogining) {
+        [self showDialog:@"正在登陆"];
+        return;
+    }
 //    //判断用户名是否为空，为空提示用户
 //    if ([self.usernameET.text isEqualToString:@""]) {
 //        self.usernameET.placeholder = @"用户名不能为空";
@@ -97,9 +98,61 @@
 //        [self showDialog:@"密码不能为空"];
 //        return;
 //    }
+    self.progressBar.hidden = NO;
+    
+    [self getAccessToken];
 
-    [self goMainView];
 }
+
+-(void)getAccessToken{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET: [NSString stringWithFormat:@"%@%@" , [Utils getStringFromPlist:@"connectIp"],@"/api/accessToken/find.do?appId=ep20170712235111&secret=34463963d038419e859e4f62f47c85de" ] parameters:nil
+        progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+        }
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             NSLog(@"%@",responseObject);
+            _userInfo= [[UserModel alloc] init];
+             _userInfo.accessToken =[[responseObject objectForKey:@"data"] objectForKey:@"ACCESS_TOKEN"];
+             _userInfo.userToken = @"";
+             _userInfo.roleId = @"";
+             [Utils setUserInfo:_userInfo];
+             [self doLogin];
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull   error) {
+             [self showDialog:@"获取ACCESS_TOKEN失败"];
+         }
+     ];
+}
+
+-(void)doLogin{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager.requestSerializer setValue:_userInfo.accessToken forHTTPHeaderField:@"access-token"];
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+//    [parameters setObject:self.usernameET.text forKey:@"username"];
+//    [parameters setObject:self.passwordET.text forKey:@"password"];
+    [parameters setObject:@"15959445322"forKey:@"username"];
+    [parameters setObject:@"wbk123" forKey:@"password"];
+    
+    [manager POST: [NSString stringWithFormat:@"%@%@" , [Utils getStringFromPlist:@"connectIp"],@"/api/login/login.do" ]  parameters:parameters
+         progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             _userInfo.userToken = [[responseObject objectForKey:@"data"] objectForKey:@"USER_TOKEN"];
+             _userInfo.roleId = [[responseObject objectForKey:@"data"] objectForKey:@"ROLE_ID"];
+             [Utils setUserInfo:_userInfo];
+            [self goMainView];
+             
+             NSLog(@"ihg%@", responseObject);
+//                NSLog(@"ihg%@",[[responseObject objectForKey:@"errorMsg"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
+            
+         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             
+         }
+     ];
+    
+}
+
 
 -(void)goMainView{
     MainViewController *mMainViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];

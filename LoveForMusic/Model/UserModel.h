@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface UserModel : NSObject
-@property(nonatomic,retain) NSString *username;//用户名
-@property(nonatomic,retain) NSString *password;//密码
+@property(nonatomic,retain) NSString *accessToken;//用户名
+@property(nonatomic,retain) NSString *userToken;//密码
+@property(nonatomic,retain) NSString *roleId;//密码
 @end

@@ -19,5 +19,7 @@
     #import "MBProgressHUD.h"
     #import "AppDelegate.h"
     #import "ConnectUtils.h"
+    #import "Utils.h"
+    #import "AFHTTPSessionManager.h"
     #import "BaseViewController.h"
 #endif

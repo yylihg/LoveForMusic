@@ -20,7 +20,7 @@
     NSString *timeStamp;
 }
 //回调委托器
-@property id<ConnectUtilsDelegate> delegate;
+@property (weak)id<ConnectUtilsDelegate> delegate;
 @property (nonatomic,retain) NSURLConnection *mConnection;//网络连接对象
 //时间戳
 @property (nonatomic,retain) NSString *timeStamp;

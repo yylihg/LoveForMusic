@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LoveForMusic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>397EDEC89DFFD5764099EE5A9E1DE889</key>
+		<key>2342390EE6FDF942D5B2EA923A60C601</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4515FD1BFCDCD6F6DB28DEA926461AC3</key>
+		<key>66448755B88221DF68146FCFD0D8D7D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA391F0C08DAA68BCE14203FCC1C7F5C</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA1ACB8A71BE8F2ED1FED1C1D9DF27A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

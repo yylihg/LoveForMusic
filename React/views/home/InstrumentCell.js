@@ -43,8 +43,6 @@ const styles = StyleSheet.create({
         width: screen.width / 4 - screen.onePixel,
         height: screen.width / 4,
         backgroundColor: 'white',
-        borderBottomWidth: screen.onePixel,
-        borderRightWidth: screen.onePixel,
         borderColor: '#d90'
     },
     iconImg: {
@@ -53,7 +51,9 @@ const styles = StyleSheet.create({
         marginBottom: 2
     },
     showText: {
-        fontSize: 12
+        fontSize: 12,
+        marginTop: 5,
+        color: '#666'
     }
 });
 

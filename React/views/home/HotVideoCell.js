@@ -33,15 +33,15 @@ class HotVideoCell extends Component {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        height: 100,
+        height: 68,
         alignItems: 'center',
         borderBottomColor: '#eee',
         borderBottomWidth: 1
     },
     imageIcon: {
         marginLeft: 20,
-        height: 40,
-        width: 40
+        height: 50,
+        width: 70
     },
     titleStyle: {
         marginLeft: 10,

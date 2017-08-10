@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoveForMusic/project/RegistViewController.m"
-            timestampString = "512923585.750285"
+            timestampString = "523036084.136875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-userRegister:"
             landmarkType = "7">
          </BreakpointContent>

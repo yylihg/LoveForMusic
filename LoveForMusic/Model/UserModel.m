@@ -9,6 +9,7 @@
 #import "UserModel.h"
 
 @implementation UserModel
-@synthesize username;
-@synthesize password;
+@synthesize accessToken;
+@synthesize userToken;
+@synthesize roleId;
 @end

@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 
 #import "ReactViewController.h"
+
 #import "MainMenuModel.h"
 @interface MainViewController ()
 //@property (weak, nonatomic) IBOutlet UITabBar *tabViewContainer;
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initMap];
+//    [self initMap];
     
     NSMutableArray *tabItemsArray = [[NSMutableArray alloc] init];
     
@@ -41,8 +42,8 @@
     MainMenuModel *homeModel = [[MainMenuModel alloc] init];
     homeModel.title = @"首页";
     homeModel.component = @"HomeView";
-    homeModel.selectedImg = @"icon_main_forewarn_select";
-    homeModel.unSelectedImg = @"icon_main_forewarn";
+    homeModel.selectedImg = @"icon_home_selected";
+    homeModel.unSelectedImg = @"icon_home";
     
     [tabItemsArray addObject: homeModel];
     
@@ -50,24 +51,35 @@
     MainMenuModel *SeeViewModel = [[MainMenuModel alloc] init];
     SeeViewModel.title = @"看看";
     SeeViewModel.component = @"SeeView";
-    SeeViewModel.selectedImg = @"icon_main_forewarn_select";
-    SeeViewModel.unSelectedImg = @"icon_main_forewarn";
+    SeeViewModel.selectedImg = @"icon_see_selected";
+    SeeViewModel.unSelectedImg = @"icon_see";
     
     [tabItemsArray addObject: SeeViewModel];
+    
+    
+    //看看
+    MainMenuModel *SelectCourcesModle = [[MainMenuModel alloc] init];
+    SelectCourcesModle.title = @"约课";
+    SelectCourcesModle.component = @"SelectCourcesPage";
+    SelectCourcesModle.selectedImg = @"icon_cources_selected";
+    SelectCourcesModle.unSelectedImg = @"icon_cources";
+    
+    [tabItemsArray addObject: SelectCourcesModle];
     //我的
     MainMenuModel *IndividualViewModel = [[MainMenuModel alloc] init];
     IndividualViewModel.title = @"我的";
     IndividualViewModel.component = @"IndividualView";
-    IndividualViewModel.selectedImg = @"icon_main_forewarn_select";
-    IndividualViewModel.unSelectedImg = @"icon_main_forewarn";
+    IndividualViewModel.selectedImg = @"icon_me_selected";
+    IndividualViewModel.unSelectedImg = @"icon_me";
     
     [tabItemsArray addObject: IndividualViewModel];
  
     
     
     NSMutableArray *viewArray = [[NSMutableArray alloc] init];
-    NSDictionary *dictSelect = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil];
-    NSDictionary *dict =  [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],
+    
+    NSDictionary *dictSelect = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:1/255.0 green:104/255.0 blue:174/255.0 alpha:1.0] ,NSForegroundColorAttributeName, nil];
+    NSDictionary *dict =  [NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:143/255.0 green:143/255.0 blue:143/255.0 alpha:1.0],
                            NSForegroundColorAttributeName,nil];
     MainMenuModel *mainMenuModel =  [[MainMenuModel alloc] init];
     for (int i = 0; i < tabItemsArray.count; i++) {
@@ -75,18 +87,22 @@
         ReactViewController *mReactViewController = [[ReactViewController alloc] init];
         mReactViewController.component = mainMenuModel.component;
         UIImage *icon_main_forewarn_select = [[UIImage imageNamed:mainMenuModel.selectedImg] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
         UIImage *icon_main_forewarn = [[UIImage imageNamed:mainMenuModel.unSelectedImg] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         UITabBarItem *tabItem = [[UITabBarItem alloc] init];
+        
+        [tabItem setTitlePositionAdjustment:UIOffsetMake(0, -4)];
+        
         [tabItem setImage:icon_main_forewarn];
         tabItem.selectedImage = icon_main_forewarn_select;
         tabItem.title = mainMenuModel.title;
-        
         [tabItem setTitleTextAttributes:dict forState:UIControlStateNormal];
         [tabItem setTitleTextAttributes:dictSelect forState:UIControlStateSelected];
         mReactViewController.tabBarItem = tabItem;
         [viewArray addObject:mReactViewController];
+        
     }
-    self.tabBar.backgroundColor =[UIColor colorWithRed:0 green:0 blue:255 alpha:1];
+    self.tabBar.backgroundColor =[UIColor colorWithRed:240/250.0 green:240/250.0 blue:240/250.0 alpha:1.0];
     self.viewControllers =viewArray;
 }
 

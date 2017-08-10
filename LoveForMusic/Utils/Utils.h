@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserModel.h"
 
 @interface Utils : NSObject
+//设置用户信息
++(void)setUserInfo: (UserModel *)userInfo;
 
+//获取用户信息
++(UserModel *)getUserInfo;
+//根据key获取plist里的值
++(NSString *)getStringFromPlist:(NSString *) key;
 //获取当前系统时间
 +(NSString *)getCurrentTime;
 //获取当前系统日期

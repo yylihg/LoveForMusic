@@ -42,9 +42,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
-        borderTopWidth: screen.onePixel,
-        borderLeftWidth: screen.onePixel,
-        borderColor: '#090'
     }
 });
 

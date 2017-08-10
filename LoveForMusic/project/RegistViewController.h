@@ -14,7 +14,7 @@
 {
     int role;
 }
-@property (nonatomic,retain) NSString *titleName;//设备名称
-
+@property (nonatomic,retain) NSString *titleName;//
+@property (nonatomic, retain) UserModel *userInfo;//用户信息
 
 @end

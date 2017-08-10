@@ -17,7 +17,7 @@
     NSString *timeStamp;
 }
 @property (nonatomic, retain) MBProgressHUD *ToastView;//提示信息窗口
-
+@property (nonatomic, retain) UserModel *userInfo;//用户信息
 //联网工具包
 @property (nonatomic,retain) ConnectUtils *mConnector;
 @end
